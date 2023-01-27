@@ -5,6 +5,7 @@ namespace: victoria-metrics
 
 resources:
   - ../../base/victoria-metrics-cluster
+  - ../../base/victoria-metrics-agent
 
 patchesStrategicMerge:
-  - patches/patch-values.yaml
+  - patches/patch-cluster-values.yaml

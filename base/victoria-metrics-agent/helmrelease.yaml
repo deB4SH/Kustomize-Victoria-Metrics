@@ -1,0 +1,14 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: victoria-metrics-agent
+releaseName: victoria-metrics-agent 
+name: victoria-metrics-agent 
+version: 0.8.29
+# comment if local
+repo: https://victoriametrics.github.io/helm-charts/
+# If chart is local, set relative path FROM the /kustomize kustomization.yaml whose generator references a directory /helm
+# chartHome: ../../../charts
+#valuesFile: values.yaml
+valuesInline: {}
+IncludeCRDs: true
