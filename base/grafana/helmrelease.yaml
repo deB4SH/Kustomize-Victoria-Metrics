@@ -1,0 +1,14 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: grafana
+releaseName: grafana
+name: grafana
+version: 6.50.5
+# comment if local
+repo: https://grafana.github.io/helm-charts
+# If chart is local, set relative path FROM the /kustomize kustomization.yaml whose generator references a directory /helm
+# chartHome: ../../../charts
+#valuesFile: values.yaml
+valuesInline: {}
+IncludeCRDs: true
