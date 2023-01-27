@@ -3,6 +3,9 @@ kind: HelmChartInflationGenerator
 metadata:
   name: victoria-metrics-cluster
 valuesInline: 
+  rbac:
+    create: true
+    pspEnabled: false
   vmselect:
     replicaCount: 1
     podAnnotations:
@@ -14,7 +17,7 @@ valuesInline:
     podAnnotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "8480"
-        
+
   vmstorage:
     replicaCount: 1
     persistentVolume:
