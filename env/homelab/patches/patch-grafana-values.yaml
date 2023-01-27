@@ -10,7 +10,7 @@ valuesInline:
         - name: victoriametrics
           type: prometheus
           orgId: 1
-          url: http://vmcluster-victoria-metrics-cluster-vmselect.victoria-metrics:8481/select/0/prometheus/
+          url: http://victoria-metrics-cluster-vmselect.victoria-metrics:8481/select/0/prometheus/
           access: proxy
           isDefault: true
           updateIntervalSeconds: 10
