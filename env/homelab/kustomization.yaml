@@ -9,3 +9,4 @@ resources:
 
 patchesStrategicMerge:
   - patches/patch-cluster-values.yaml
+  - patches/patch-agent-values.yaml
