@@ -3,6 +3,10 @@ kind: HelmChartInflationGenerator
 metadata:
   name: victoria-metrics-agent
 valuesInline: 
+  rbac:
+    create: true
+    pspEnabled: false
+
   remoteWriteUrls:
    - http://vmcluster-victoria-metrics-cluster-vminsert.victoria-metrics:8480/insert/0/prometheus/
 
