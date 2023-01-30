@@ -12,3 +12,4 @@ repo: https://grafana.github.io/helm-charts
 #valuesFile: values.yaml
 valuesInline: {}
 IncludeCRDs: true
+namespace: victoria-metrics
