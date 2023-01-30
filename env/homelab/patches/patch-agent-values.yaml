@@ -13,7 +13,7 @@ valuesInline:
     enabled: true
 
   remoteWriteUrls:
-   - http://vmcluster-victoria-metrics-cluster-vminsert.victoria-metrics:8480/insert/0/prometheus/
+   - http://victoria-metrics-cluster-vminsert.victoria-metrics:8480/insert/0/prometheus/
   
   config:
     global:
