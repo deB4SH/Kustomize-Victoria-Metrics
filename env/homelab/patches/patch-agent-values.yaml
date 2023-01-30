@@ -6,6 +6,12 @@ valuesInline:
   rbac:
     pspEnabled: false
   
+  deployment:
+    enabled: false
+
+  statefulset:
+    enabled: true
+
   remoteWriteUrls:
    - http://vmcluster-victoria-metrics-cluster-vminsert.victoria-metrics:8480/insert/0/prometheus/
   
