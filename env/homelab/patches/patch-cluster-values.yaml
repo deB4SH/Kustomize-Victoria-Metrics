@@ -11,12 +11,6 @@ valuesInline:
     podAnnotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "8481"
-    #suppresStorageFQDNsRender: true
-    extraArgs:
-      envflag.enable: "true"
-      envflag.prefix: VM_
-      loggerFormat: json
-      #storageNode: "victoria-metrics-cluster-vmstorage.victoria-metrics:8401"
 
   vminsert:
     replicaCount: 1
@@ -27,7 +21,6 @@ valuesInline:
       envflag.enable: "true"
       envflag.prefix: VM_
       loggerFormat: json
-      #storageNode: "victoria-metrics-cluster-vmstorage.victoria-metrics:8401"
 
   vmstorage:
     replicaCount: 1
