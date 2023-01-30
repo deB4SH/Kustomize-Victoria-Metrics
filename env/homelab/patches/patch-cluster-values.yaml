@@ -11,7 +11,7 @@ valuesInline:
     podAnnotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "8481"
-    suppresStorageFQDNsRender: true
+    #suppresStorageFQDNsRender: true
     extraArgs:
       envflag.enable: "true"
       envflag.prefix: VM_
